@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7AQ6Es8rfKrqt9q2ddszR9Bjw20FHa1hKy8iUqDL5i9F2HsNqmOkpoGsAWjrVwf+ilPNAa0oEgtBG40IMhhLWg==",
+  "dgSpecHash": "bqR2FCBa7VLsPT4pu7DnuFJ4OT2EnTqnwFEncTD/uYbFGjUHpc4ci5vWCapMRTB0E08DaKBwkHA3mnr6NuIONw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JakubFiliks\\source\\repos\\JSON_Generator\\JSON_Generator\\JSON_Generator.csproj",
+  "projectFilePath": "C:\\Users\\JakubFiliks\\source\\repos\\JSON_Generator\\json\\JSON_Generator\\JSON_Generator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JakubFiliks\\.nuget\\packages\\ironxl.excel\\2022.3.0\\ironxl.excel.2022.3.0.nupkg.sha512",
     "C:\\Users\\JakubFiliks\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",

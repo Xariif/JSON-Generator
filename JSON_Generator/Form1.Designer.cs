@@ -40,6 +40,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
             this.cCountry = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +58,8 @@
             // cLogin
             // 
             this.cLogin.AutoSize = true;
+            this.cLogin.Checked = true;
+            this.cLogin.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cLogin.Location = new System.Drawing.Point(12, 12);
             this.cLogin.Name = "cLogin";
             this.cLogin.Size = new System.Drawing.Size(56, 19);
@@ -66,6 +70,8 @@
             // cPassword
             // 
             this.cPassword.AutoSize = true;
+            this.cPassword.Checked = true;
+            this.cPassword.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cPassword.Location = new System.Drawing.Point(12, 37);
             this.cPassword.Name = "cPassword";
             this.cPassword.Size = new System.Drawing.Size(76, 19);
@@ -76,6 +82,8 @@
             // cEmail
             // 
             this.cEmail.AutoSize = true;
+            this.cEmail.Checked = true;
+            this.cEmail.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cEmail.Location = new System.Drawing.Point(12, 62);
             this.cEmail.Name = "cEmail";
             this.cEmail.Size = new System.Drawing.Size(60, 19);
@@ -86,6 +94,8 @@
             // cPhone
             // 
             this.cPhone.AutoSize = true;
+            this.cPhone.Checked = true;
+            this.cPhone.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cPhone.Location = new System.Drawing.Point(119, 62);
             this.cPhone.Name = "cPhone";
             this.cPhone.Size = new System.Drawing.Size(60, 19);
@@ -96,6 +106,8 @@
             // cAddress
             // 
             this.cAddress.AutoSize = true;
+            this.cAddress.Checked = true;
+            this.cAddress.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cAddress.Location = new System.Drawing.Point(119, 37);
             this.cAddress.Name = "cAddress";
             this.cAddress.Size = new System.Drawing.Size(68, 19);
@@ -106,6 +118,8 @@
             // cName
             // 
             this.cName.AutoSize = true;
+            this.cName.Checked = true;
+            this.cName.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cName.Location = new System.Drawing.Point(12, 87);
             this.cName.Name = "cName";
             this.cName.Size = new System.Drawing.Size(58, 19);
@@ -116,6 +130,8 @@
             // cSurname
             // 
             this.cSurname.AutoSize = true;
+            this.cSurname.Checked = true;
+            this.cSurname.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cSurname.Location = new System.Drawing.Point(12, 112);
             this.cSurname.Name = "cSurname";
             this.cSurname.Size = new System.Drawing.Size(73, 19);
@@ -127,9 +143,19 @@
             // 
             this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numericUpDown1.Location = new System.Drawing.Point(279, 27);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(81, 19);
             this.numericUpDown1.TabIndex = 8;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
             // 
             // label1
             // 
@@ -143,6 +169,8 @@
             // cCountry
             // 
             this.cCountry.AutoSize = true;
+            this.cCountry.Checked = true;
+            this.cCountry.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cCountry.Location = new System.Drawing.Point(119, 12);
             this.cCountry.Name = "cCountry";
             this.cCountry.Size = new System.Drawing.Size(69, 19);
@@ -150,11 +178,36 @@
             this.cCountry.Text = "Country";
             this.cCountry.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "XLS",
+            "JSON",
+            "XML",
+            "CSV"});
+            this.comboBox1.Location = new System.Drawing.Point(279, 67);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(81, 23);
+            this.comboBox1.TabIndex = 12;
+            this.comboBox1.Tag = "";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(279, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 15);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Format";
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 145);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.cCountry);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDown1);
@@ -166,6 +219,7 @@
             this.Controls.Add(this.cPassword);
             this.Controls.Add(this.cLogin);
             this.Controls.Add(this.bGenerate);
+            this.Name = "mainForm";
             this.Text = "Data Generator";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
@@ -187,5 +241,7 @@
         private Label label1;
         private SaveFileDialog saveFile;
         private CheckBox cCountry;
+        private ComboBox comboBox1;
+        private Label label2;
     }
 }

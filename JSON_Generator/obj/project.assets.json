@@ -5668,11 +5668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JakubFiliks\\source\\repos\\JSON_Generator\\JSON_Generator\\JSON_Generator.csproj",
+      "projectUniqueName": "C:\\Users\\JakubFiliks\\source\\repos\\JSON_Generator\\json\\JSON_Generator\\JSON_Generator.csproj",
       "projectName": "JSON_Generator",
-      "projectPath": "C:\\Users\\JakubFiliks\\source\\repos\\JSON_Generator\\JSON_Generator\\JSON_Generator.csproj",
+      "projectPath": "C:\\Users\\JakubFiliks\\source\\repos\\JSON_Generator\\json\\JSON_Generator\\JSON_Generator.csproj",
       "packagesPath": "C:\\Users\\JakubFiliks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JakubFiliks\\source\\repos\\JSON_Generator\\JSON_Generator\\obj\\",
+      "outputPath": "C:\\Users\\JakubFiliks\\source\\repos\\JSON_Generator\\json\\JSON_Generator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
