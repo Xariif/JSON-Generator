@@ -16,7 +16,7 @@ namespace JSON_Generator
             var data = GetData();
 
 
-            if (save(data) == true)
+            if (Save(data) == true)
             {
                 string message = "Wygenerowano pomyślnie " + numericUpDown1.Value + " rekordów!";
                 MessageBox.Show(message);
@@ -29,9 +29,9 @@ namespace JSON_Generator
         }
 
 
-        bool save(List<DataView> data)
+        bool Save(List<DataView> data)
         {
-            char[] alphabet = "ABCEDFGHIJKLMNOPRST".ToCharArray();
+            char[] alphabet = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
 
             try
             {
@@ -111,23 +111,7 @@ namespace JSON_Generator
                     {
                         xlsSheet[alphabet[j] + i.ToString()].Value = data[i - 1].Phone;
                         j++;
-                    }
-                    //if (cLogin.Checked)
-                    //    xlsSheet[alphabet[i - 2] + i.ToString()].Value = data[i - 2].Login;
-                    //if (cPassword.Checked)
-                    //   xlsSheet[alphabet[i - 2] + i.ToString()].Value = data[i - 2].Password;
-                    //if (cEmail.Checked)
-                    //   xlsSheet[alphabet[i - 2] + i.ToString()].Value = data[i - 2].Email;
-                    //if (cName.Checked)
-                    //   xlsSheet[alphabet[i - 2] + i.ToString()].Value = data[i - 2].Name;
-                    //if (cSurname.Checked)
-                    //   xlsSheet[alphabet[i - 2] + i.ToString()].Value = data[i - 2].Surname;
-                    //if (cCountry.Checked)
-                    //   xlsSheet[alphabet[i - 2] + i.ToString()].Value = data[i - 2].Country;
-                    //if (cAddress.Checked)
-                    //   xlsSheet[alphabet[i - 2] + i.ToString()].Value = data[i - 2].Address;
-                    //if (cPhone.Checked)
-                    //   xlsSheet[alphabet[i - 2] + i.ToString()].Value = data[i - 2].Phone;
+                    }                  
                 }
 
 
@@ -247,7 +231,6 @@ namespace JSON_Generator
                     _ => charsList[random.Next(charsList.Length)],
                 };
             }
-
 
             return result;
         }
